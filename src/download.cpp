@@ -28,7 +28,7 @@ nlohmann::json DOWNLOAD::getUpdateData(CAPTURE::CAPTURE_RESULT captureResult)
 {
     IO::Debug(t("preparing_modified_request"));
     nlohmann::json modifiedBody = captureResult.request_body;
-    modifiedBody["version"] = "99.99.90";
+    modifiedBody["version"] = "99.99.94";
     modifiedBody["networkType"] = "WIFI";
     IO::Debug(t("modified_version_to") + ": " + std::string(modifiedBody["version"]));
 
